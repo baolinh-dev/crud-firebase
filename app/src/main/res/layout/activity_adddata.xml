@@ -8,58 +8,101 @@
     android:gravity="center"
     tools:context=".adddata">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add product to Firebase"
+        android:layout_marginBottom="40dp"
+        android:textSize="32sp"
+        android:textColor="#000"/>
+
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/add_name"
-        android:textSize="20sp"
-        android:hint="Your Name"
+        android:textSize="18sp"
+        android:hint="Please enter name"
         android:layout_marginBottom="15dp"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="30dp"
+        android:background="@drawable/rounded_input"/>
+        />
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/add_course"
-        android:textSize="20sp"
-        android:hint="Your Course"
+        android:textSize="18sp"
+        android:hint="Please enter type"
         android:layout_marginBottom="15dp"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="30dp"
+        android:background="@drawable/rounded_input"/>
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/add_email"
-        android:textSize="20sp"
-        android:hint="Your Email"
+        android:textSize="18sp"
+        android:hint="Please enter price"
         android:layout_marginBottom="15dp"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="30dp"
+        android:background="@drawable/rounded_input"/>
 
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/add_purl"
-        android:textSize="20sp"
-        android:hint="Profile Image URL"
+        android:textSize="18sp"
+        android:hint="Please enter Profile Image URL"
         android:layout_marginBottom="15dp"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="30dp"
+        android:background="@drawable/rounded_input"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/add_submit"
-        android:textSize="20sp"
-        android:text="Add to Firebase"/>
+        android:orientation="horizontal"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/add_back"
-        android:textSize="20sp"
-        android:text="Back"/>
+        <Button
+            android:id="@+id/add_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/add"
+            android:text="Add"
+            android:padding="8dp"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/add_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/back"
+            android:text="Back"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
